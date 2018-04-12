@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin:0;
+	outline: none;
+}
+
+body {
+	background-color: black;
+}
+
+.thebigBox {
+	margin: 30px 0 0 30px;
+}
+
+/*    Fix the timing for sentences    */
+
+p{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+  animation: type 4s steps(50, end); 
+}
+
+p:nth-child(2){
+  animation: type2 5s steps(60, end);
+}
+
+p:nth-child(3){
+	animation: type2 10s steps(80, end)
+}
+
+p:nth-child(4){
+	animation: type2 20s steps(90, end)
+}
+
+span {
+	animation: blink 1s infinite;
+	border-right: .15em lime;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.button {
+	text-decoration: none;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	background-color: none;
+	color: lime;
+	font-size: 18px;
+	padding: 14px 40px;
+	text-align: center;
+	border: none;
+	cursor: none;
+	bottom: 10%;
+	position: fixed;
+	margin-left: 120px;
+	font-family: 'Courier'
+}
+
+.button:hover {
+	color: blue;
+}
+
+.button2 {
+	text-decoration: none;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	background-color: none;
+	color: lime;
+	font-size: 18px;
+	padding: 14px 40px;
+	text-align: center;
+	border: none;
+	cursor: none;
+	bottom: 10%;
+	position: fixed;
+	margin-left: 300px;
+	font-family: 'Courier'
+}
+
+.button2:hover {
+	color: red;
+}
+
+
+
+
+
+
+
+

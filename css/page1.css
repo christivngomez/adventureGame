@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin:0;
+	outline: none;
+}
+
+body{
+	background-color: black;
+}
+
+.bigbox {
+	margin: 30px 0 0 30px;
+}
+
+
+p {
+	color: lime;
+	font-family: "Courier";
+	font-size: 20px;
+	line-height: 1.6;
+	margin: 20px 0 0 20px;
+	white-space: normal;
+	overflow: hidden;
+	width: 80%;
+	animation: type 1.5s steps(100, end);
+}
+
+p:nth-child(2) {
+	animation: type2 2s steps(100, end);
+}
+
+span {
+	animation: blink 1s infinite;
+	border-right: .15em lime;
+}
+
+@keyframes type {
+	from { width: 0; }
+}
+
+@keyframes type2 {
+	0% { width: 0; }
+	50% { width: 0; }
+	100% { width: 100; }
+}
+
+@keyframes blink {
+	to { opacity: .0; }
+}
+
+.button {
+	text-decoration: none;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	background-color: none;
+	color: lime;
+	font-size: 18px;
+	padding: 14px 40px;
+	text-align: center;
+	border: none;
+	cursor: none;
+	bottom: 15%;
+	position: fixed;
+	margin-left: 120px;
+	font-family: 'Courier'
+}
+
+.button:hover {
+	color: red;
+}
+
+/*.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/*p{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
